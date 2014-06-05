@@ -7,13 +7,29 @@
 //
 
 #import "GGAppDelegate.h"
+#import "GGApplicationRouter.h"
+#import "NSURL+Routes.h"
+#import <JLRoutes/JLRoutes.h>
+
+@interface GGAppDelegate ()
+
+@property (nonatomic, strong) GGApplicationRouter *appBuilder;
+@end
+
 
 @implementation GGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    self.appBuilder = [GGApplicationRouter new];
+    [self.appBuilder bootStrap];
+    NSLog(@"%@", [NSURL cp_URLForCatDetailWithId:@"giullo"]);
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.rootViewController = [self.appBuilder rootViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -44,6 +60,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [JLRoutes routeURL:url];
 }
 
 @end

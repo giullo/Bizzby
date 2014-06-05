@@ -18,11 +18,14 @@ PODS:
   - AFNetworking/UIKit (2.2.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - JLRoutes (1.5.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - JLRoutes (~> 1.5.1)
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  JLRoutes: 3400fe314fc01c861a14ff7e183d209b0cd302ae
 
 COCOAPODS: 0.33.1
