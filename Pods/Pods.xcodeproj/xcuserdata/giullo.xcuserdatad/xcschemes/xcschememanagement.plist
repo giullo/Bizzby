@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-CatsPassionTests-Kiwi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CatsPassionTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JLRoutes.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A0D1237EF404425927BC331</key>
+		<key>3E203066D4AE44F5B158C5A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4A75764E246B47C995D1DA56</key>
+		<key>484A5548775942BC89FEC075</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D5C726C3F65486AB3514B9E</key>
+		<key>77D4D648DC89485E94F70B93</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F61B25551AFD453B8D356A7C</key>
+		<key>B248868A442D4D829E60B3B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9CFF65A712A425997DA3C25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F297EEB78EEB4094826EEC90</key>
 		<dict>
 			<key>primary</key>
 			<true/>
