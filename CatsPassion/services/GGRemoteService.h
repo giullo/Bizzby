@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "GGServiceProtocol.h"
 
-@interface GGService : NSObject <GGServiceProtocol>
+@interface GGRemoteService : NSObject <GGServiceProtocol>
 
 @property (nonatomic, readonly, strong) NSURL *url;
 @property (nonatomic, copy, readonly) GGServiceProtocolCompletionBlock completionBlock;

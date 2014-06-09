@@ -13,6 +13,8 @@ NSString * const GGCatsScheme = @"cats";
 // Routes
 NSString * const NSURLRouteCatGallery              = @"/cat-gallery";
 NSString * const NSURLRouteCatDetail               = @"/cat-detail/:id";
+NSString * const NSURLRouteScreenChoice            = @"/screen-choice";
+NSString * const NSURLRouteDogGallery              = @"/dog-gallery";
 
 @implementation NSURL (Routes)
 
@@ -26,10 +28,20 @@ NSString * const NSURLRouteCatDetail               = @"/cat-detail/:id";
     return [self cp_URLForPath:NSURLRouteCatGallery params:nil];
 }
 
++ (NSURL *)cp_URLForDogGallery
+{
+    return [self cp_URLForPath:NSURLRouteDogGallery params:nil];
+}
+
 + (NSURL *)cp_URLForCatDetailWithId:(NSString *)theId
 {
     NSParameterAssert(theId);
     return [self cp_URLForPath:NSURLRouteCatDetail params:@{@":id" : theId}];
+}
+
++ (NSURL *)cp_URLForScreenChoice
+{
+    return [self cp_URLForPath:NSURLRouteScreenChoice params:nil];
 }
 
 #pragma mark - Private

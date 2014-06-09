@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Giuliano Galea. All rights reserved.
 //
 
-#import "GGService.h"
+#import "GGRemoteService.h"
 
-@interface GGService ()
+@interface GGRemoteService ()
 @property (nonatomic, copy) GGServiceProtocolCompletionBlock completionBlock;
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
 @end
 
-@implementation GGService
+@implementation GGRemoteService
 
 - (instancetype)initWithURL:(NSURL *)url sessionManager:(AFHTTPSessionManager *)sessionManager
 {

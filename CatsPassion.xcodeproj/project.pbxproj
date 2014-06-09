@@ -20,13 +20,18 @@
 		7ECF00E91940ED6300EA9B7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECF00D11940ED6300EA9B7D /* UIKit.framework */; };
 		7ECF00F11940ED6300EA9B7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ECF00EF1940ED6300EA9B7D /* InfoPlist.strings */; };
 		7ECF00F31940ED6300EA9B7D /* CatsPassionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF00F21940ED6300EA9B7D /* CatsPassionTests.m */; };
-		7ECF01051940FD9600EA9B7D /* GGService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF01041940FD9600EA9B7D /* GGService.m */; };
+		7ECF01051940FD9600EA9B7D /* GGRemoteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF01041940FD9600EA9B7D /* GGRemoteService.m */; };
 		7ECF010E1941063600EA9B7D /* GGModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF010D1941063600EA9B7D /* GGModelController.m */; };
 		7ECF011119410F7100EA9B7D /* GGCatsListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF011019410F7100EA9B7D /* GGCatsListService.m */; };
 		7ECF0116194120FE00EA9B7D /* GGApplicationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF0115194120FE00EA9B7D /* GGApplicationRouter.m */; };
 		7ECF01191941235400EA9B7D /* NSURL+Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF01181941235400EA9B7D /* NSURL+Routes.m */; };
-		7ECF011D194133A300EA9B7D /* GGCatGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF011C194133A300EA9B7D /* GGCatGalleryViewController.m */; };
+		7ECF011D194133A300EA9B7D /* GGAnimalGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF011C194133A300EA9B7D /* GGAnimalGalleryViewController.m */; };
 		7ECF01211941370900EA9B7D /* GGCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF01201941370900EA9B7D /* GGCat.m */; };
+		7EFD787219463427008EE12D /* GGGalleryRenderStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD787119463427008EE12D /* GGGalleryRenderStrategy.m */; };
+		7EFD787819463E27008EE12D /* GGAnimalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD787719463E27008EE12D /* GGAnimalCollectionViewCell.m */; };
+		7EFD787D19465617008EE12D /* GGAnimalChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD787C19465617008EE12D /* GGAnimalChoiceViewController.m */; };
+		7EFD788019465FDF008EE12D /* GGDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD787F19465FDF008EE12D /* GGDog.m */; };
+		7EFD78861946630B008EE12D /* GGDogsListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD78851946630B008EE12D /* GGDogsListService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +64,8 @@
 		7ECF00F21940ED6300EA9B7D /* CatsPassionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatsPassionTests.m; sourceTree = "<group>"; };
 		7ECF01011940F83C00EA9B7D /* GGModelControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGModelControllerProtocol.h; path = modelController/GGModelControllerProtocol.h; sourceTree = "<group>"; };
 		7ECF01021940FC7000EA9B7D /* GGServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGServiceProtocol.h; path = protocols/GGServiceProtocol.h; sourceTree = "<group>"; };
-		7ECF01031940FD9600EA9B7D /* GGService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGService.h; path = services/GGService.h; sourceTree = "<group>"; };
-		7ECF01041940FD9600EA9B7D /* GGService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGService.m; path = services/GGService.m; sourceTree = "<group>"; };
+		7ECF01031940FD9600EA9B7D /* GGRemoteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGRemoteService.h; path = services/GGRemoteService.h; sourceTree = "<group>"; };
+		7ECF01041940FD9600EA9B7D /* GGRemoteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGRemoteService.m; path = services/GGRemoteService.m; sourceTree = "<group>"; };
 		7ECF010C1941063600EA9B7D /* GGModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGModelController.h; sourceTree = "<group>"; };
 		7ECF010D1941063600EA9B7D /* GGModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGModelController.m; sourceTree = "<group>"; };
 		7ECF010F19410F7100EA9B7D /* GGCatsListService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGCatsListService.h; path = services/GGCatsListService.h; sourceTree = "<group>"; };
@@ -69,10 +74,21 @@
 		7ECF0115194120FE00EA9B7D /* GGApplicationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGApplicationRouter.m; path = core/GGApplicationRouter.m; sourceTree = "<group>"; };
 		7ECF01171941235400EA9B7D /* NSURL+Routes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Routes.h"; path = "core/NSURL+Routes.h"; sourceTree = "<group>"; };
 		7ECF01181941235400EA9B7D /* NSURL+Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Routes.m"; path = "core/NSURL+Routes.m"; sourceTree = "<group>"; };
-		7ECF011B194133A300EA9B7D /* GGCatGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGCatGalleryViewController.h; path = viewControllers/GGCatGalleryViewController.h; sourceTree = "<group>"; };
-		7ECF011C194133A300EA9B7D /* GGCatGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGCatGalleryViewController.m; path = viewControllers/GGCatGalleryViewController.m; sourceTree = "<group>"; };
+		7ECF011B194133A300EA9B7D /* GGAnimalGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGAnimalGalleryViewController.h; path = viewControllers/GGAnimalGalleryViewController.h; sourceTree = "<group>"; };
+		7ECF011C194133A300EA9B7D /* GGAnimalGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGAnimalGalleryViewController.m; path = viewControllers/GGAnimalGalleryViewController.m; sourceTree = "<group>"; };
 		7ECF011F1941370900EA9B7D /* GGCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGCat.h; path = models/GGCat.h; sourceTree = "<group>"; };
 		7ECF01201941370900EA9B7D /* GGCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGCat.m; path = models/GGCat.m; sourceTree = "<group>"; };
+		7EFD787019463427008EE12D /* GGGalleryRenderStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGGalleryRenderStrategy.h; path = core/GGGalleryRenderStrategy.h; sourceTree = "<group>"; };
+		7EFD787119463427008EE12D /* GGGalleryRenderStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGGalleryRenderStrategy.m; path = core/GGGalleryRenderStrategy.m; sourceTree = "<group>"; };
+		7EFD787319463453008EE12D /* GGRenderStrategyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGRenderStrategyProtocol.h; path = protocols/GGRenderStrategyProtocol.h; sourceTree = "<group>"; };
+		7EFD787619463E27008EE12D /* GGAnimalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGAnimalCollectionViewCell.h; path = views/GGAnimalCollectionViewCell.h; sourceTree = "<group>"; };
+		7EFD787719463E27008EE12D /* GGAnimalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGAnimalCollectionViewCell.m; path = views/GGAnimalCollectionViewCell.m; sourceTree = "<group>"; };
+		7EFD787B19465617008EE12D /* GGAnimalChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGAnimalChoiceViewController.h; path = viewControllers/GGAnimalChoiceViewController.h; sourceTree = "<group>"; };
+		7EFD787C19465617008EE12D /* GGAnimalChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGAnimalChoiceViewController.m; path = viewControllers/GGAnimalChoiceViewController.m; sourceTree = "<group>"; };
+		7EFD787E19465FDF008EE12D /* GGDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGDog.h; path = models/GGDog.h; sourceTree = "<group>"; };
+		7EFD787F19465FDF008EE12D /* GGDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGDog.m; path = models/GGDog.m; sourceTree = "<group>"; };
+		7EFD78841946630B008EE12D /* GGDogsListService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGDogsListService.h; path = services/GGDogsListService.h; sourceTree = "<group>"; };
+		7EFD78851946630B008EE12D /* GGDogsListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GGDogsListService.m; path = services/GGDogsListService.m; sourceTree = "<group>"; };
 		D255ABEDC4B04B98AF4C1086 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,12 +152,10 @@
 		7ECF00D31940ED6300EA9B7D /* CatsPassion */ = {
 			isa = PBXGroup;
 			children = (
-				7ECF011E194136EE00EA9B7D /* Models */,
-				7ECF011A1941337E00EA9B7D /* ViewControllers */,
+				7EFD78821946622E008EE12D /* Dogs */,
+				7EFD788119466224008EE12D /* Cats */,
+				7EFD787A194655CF008EE12D /* ChoiceScreen */,
 				7ECF0113194120DB00EA9B7D /* Core */,
-				7ECF010B1941062800EA9B7D /* Base */,
-				7ECF01001940F7EE00EA9B7D /* Protocols */,
-				7ECF00FC1940F0CF00EA9B7D /* Services */,
 				7ECF00DC1940ED6300EA9B7D /* GGAppDelegate.h */,
 				7ECF00DD1940ED6300EA9B7D /* GGAppDelegate.m */,
 				7ECF00DF1940ED6300EA9B7D /* Images.xcassets */,
@@ -182,10 +196,8 @@
 		7ECF00FC1940F0CF00EA9B7D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7ECF01031940FD9600EA9B7D /* GGService.h */,
-				7ECF01041940FD9600EA9B7D /* GGService.m */,
-				7ECF010F19410F7100EA9B7D /* GGCatsListService.h */,
-				7ECF011019410F7100EA9B7D /* GGCatsListService.m */,
+				7ECF01031940FD9600EA9B7D /* GGRemoteService.h */,
+				7ECF01041940FD9600EA9B7D /* GGRemoteService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -195,46 +207,85 @@
 			children = (
 				7ECF01011940F83C00EA9B7D /* GGModelControllerProtocol.h */,
 				7ECF01021940FC7000EA9B7D /* GGServiceProtocol.h */,
+				7EFD787319463453008EE12D /* GGRenderStrategyProtocol.h */,
 			);
 			name = Protocols;
-			sourceTree = "<group>";
-		};
-		7ECF010B1941062800EA9B7D /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				7ECF010C1941063600EA9B7D /* GGModelController.h */,
-				7ECF010D1941063600EA9B7D /* GGModelController.m */,
-			);
-			name = Base;
 			sourceTree = "<group>";
 		};
 		7ECF0113194120DB00EA9B7D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7EFD78831946625B008EE12D /* ViewControllers */,
+				7ECF00FC1940F0CF00EA9B7D /* Services */,
+				7ECF01001940F7EE00EA9B7D /* Protocols */,
+				7ECF010C1941063600EA9B7D /* GGModelController.h */,
+				7ECF010D1941063600EA9B7D /* GGModelController.m */,
 				7ECF0114194120FE00EA9B7D /* GGApplicationRouter.h */,
 				7ECF0115194120FE00EA9B7D /* GGApplicationRouter.m */,
 				7ECF01171941235400EA9B7D /* NSURL+Routes.h */,
 				7ECF01181941235400EA9B7D /* NSURL+Routes.m */,
+				7EFD787019463427008EE12D /* GGGalleryRenderStrategy.h */,
+				7EFD787119463427008EE12D /* GGGalleryRenderStrategy.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		7ECF011A1941337E00EA9B7D /* ViewControllers */ = {
+		7ECF011A1941337E00EA9B7D /* AnimalGallery */ = {
 			isa = PBXGroup;
 			children = (
-				7ECF011B194133A300EA9B7D /* GGCatGalleryViewController.h */,
-				7ECF011C194133A300EA9B7D /* GGCatGalleryViewController.m */,
+				7EFD787519463DEF008EE12D /* Views */,
+				7ECF011B194133A300EA9B7D /* GGAnimalGalleryViewController.h */,
+				7ECF011C194133A300EA9B7D /* GGAnimalGalleryViewController.m */,
 			);
-			name = ViewControllers;
+			name = AnimalGallery;
 			sourceTree = "<group>";
 		};
-		7ECF011E194136EE00EA9B7D /* Models */ = {
+		7EFD787519463DEF008EE12D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7EFD787619463E27008EE12D /* GGAnimalCollectionViewCell.h */,
+				7EFD787719463E27008EE12D /* GGAnimalCollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7EFD787A194655CF008EE12D /* ChoiceScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7EFD787B19465617008EE12D /* GGAnimalChoiceViewController.h */,
+				7EFD787C19465617008EE12D /* GGAnimalChoiceViewController.m */,
+			);
+			name = ChoiceScreen;
+			sourceTree = "<group>";
+		};
+		7EFD788119466224008EE12D /* Cats */ = {
+			isa = PBXGroup;
+			children = (
+				7ECF010F19410F7100EA9B7D /* GGCatsListService.h */,
+				7ECF011019410F7100EA9B7D /* GGCatsListService.m */,
 				7ECF011F1941370900EA9B7D /* GGCat.h */,
 				7ECF01201941370900EA9B7D /* GGCat.m */,
 			);
-			name = Models;
+			name = Cats;
+			sourceTree = "<group>";
+		};
+		7EFD78821946622E008EE12D /* Dogs */ = {
+			isa = PBXGroup;
+			children = (
+				7EFD787E19465FDF008EE12D /* GGDog.h */,
+				7EFD787F19465FDF008EE12D /* GGDog.m */,
+				7EFD78841946630B008EE12D /* GGDogsListService.h */,
+				7EFD78851946630B008EE12D /* GGDogsListService.m */,
+			);
+			name = Dogs;
+			sourceTree = "<group>";
+		};
+		7EFD78831946625B008EE12D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ECF011A1941337E00EA9B7D /* AnimalGallery */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,15 +419,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECF01051940FD9600EA9B7D /* GGService.m in Sources */,
+				7ECF01051940FD9600EA9B7D /* GGRemoteService.m in Sources */,
+				7EFD787819463E27008EE12D /* GGAnimalCollectionViewCell.m in Sources */,
+				7EFD78861946630B008EE12D /* GGDogsListService.m in Sources */,
 				7ECF00DE1940ED6300EA9B7D /* GGAppDelegate.m in Sources */,
+				7EFD788019465FDF008EE12D /* GGDog.m in Sources */,
 				7ECF01191941235400EA9B7D /* NSURL+Routes.m in Sources */,
 				7ECF0116194120FE00EA9B7D /* GGApplicationRouter.m in Sources */,
-				7ECF011D194133A300EA9B7D /* GGCatGalleryViewController.m in Sources */,
+				7ECF011D194133A300EA9B7D /* GGAnimalGalleryViewController.m in Sources */,
 				7ECF011119410F7100EA9B7D /* GGCatsListService.m in Sources */,
+				7EFD787219463427008EE12D /* GGGalleryRenderStrategy.m in Sources */,
 				7ECF01211941370900EA9B7D /* GGCat.m in Sources */,
 				7ECF00DA1940ED6300EA9B7D /* main.m in Sources */,
 				7ECF010E1941063600EA9B7D /* GGModelController.m in Sources */,
+				7EFD787D19465617008EE12D /* GGAnimalChoiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

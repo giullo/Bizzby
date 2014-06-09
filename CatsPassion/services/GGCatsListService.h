@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Giuliano Galea. All rights reserved.
 //
 
-#import "GGService.h"
+#import "GGRemoteService.h"
 
-@interface GGCatsListService : GGService <NSXMLParserDelegate>
+@interface GGCatsListService : GGRemoteService <NSXMLParserDelegate>
 
 @end

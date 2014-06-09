@@ -18,6 +18,7 @@ static NSString * parserIdKey               = @"id";
 @property (nonatomic, strong) GGCat *catTmp;
 @property (nonatomic, strong) NSMutableString *stringBuffer;
 @property (nonatomic, assign) BOOL isId;
+@property (nonatomic, strong) NSString *thumbURLTemplate;
 @end
 
 @implementation GGCatsListService
@@ -27,6 +28,7 @@ static NSString * parserIdKey               = @"id";
     self = [super initWithURL:url sessionManager:sessionManager];
     if (self) {
         self.sessionManager.responseSerializer = [[AFXMLParserResponseSerializer alloc] init];
+        _thumbURLTemplate = [NSString stringWithFormat:@"%@://%@%@", url.scheme, url.host, [url.pathComponents componentsJoinedByString:@"/"]];
     }
     return self;
 }
@@ -74,6 +76,9 @@ didStartElement:(NSString *)elementName
 {
     if ([elementName isEqualToString:parserIdKey]) {
         self.catTmp.uniqueId = [self.stringBuffer copy];
+        /* http://thecatapi.com/api/images/get?image_id=707 */
+        NSString *fullPath = [self.thumbURLTemplate stringByAppendingFormat:@"?image_id=%@&size=small", self.catTmp.uniqueId];
+        self.catTmp.thumbImageURL = [NSURL URLWithString:fullPath];
         [self.stringBuffer setString:@""];
         self.isId = NO;
     } else if ([elementName isEqualToString:parserImageKey]) {

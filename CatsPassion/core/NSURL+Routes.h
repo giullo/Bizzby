@@ -9,7 +9,8 @@
 // Routes
 extern NSString * const NSURLRouteCatGallery;
 extern NSString * const NSURLRouteCatDetail;
-
+extern NSString * const NSURLRouteScreenChoice;
+extern NSString * const NSURLRouteDogGallery;
 
 #import <Foundation/Foundation.h>
 
@@ -21,12 +22,22 @@ extern NSString * const NSURLRouteCatDetail;
 + (NSString *)cp_schema;
 
 /**
-    Returns a properly configured url for the gallery route
+    Returns a properly configured url for the screen choice route
+ */
++ (NSURL *)cp_URLForScreenChoice;
+
+/**
+    Returns a properly configured url for the cat gallery route
  */
 + (NSURL *)cp_URLForCatGallery;
 
 /**
- Returns a properly configured url for the detail route
+ Returns a properly configured url for the dog gallery route
+ */
++ (NSURL *)cp_URLForDogGallery;
+
+/**
+ Returns a properly configured url for the cat detail route
  */
 + (NSURL *)cp_URLForCatDetailWithId:(NSString *)theId;
 

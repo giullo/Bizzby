@@ -18,6 +18,9 @@
 - (void)fetchDataWithRange:(NSRange)range;
 - (void)addDelegate:(id <GGModelControllerDelegate>)delegate;
 - (void)removeDelegate:(id <GGModelControllerDelegate>)delegate;
+- (NSInteger)numberOfSections;
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

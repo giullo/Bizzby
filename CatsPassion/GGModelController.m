@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSPointerArray *delegates;
 @property (nonatomic, strong) id <GGServiceProtocol> service;
+@property (nonatomic, strong) NSArray *items;
 @end
 
 @implementation GGModelController
@@ -65,10 +66,26 @@
     }
     
     [self.service fetchDataWithRange:range withCompletionBlock:^(id data, NSError *error) {
+        self.items = data;
         for (id <GGModelControllerDelegate> delegate in self.delegates) {
             [delegate modelController:self didReceiveData:data error:error];
         }
     }];
 };
+
+- (NSInteger)numberOfItemsInSection:(NSInteger)section
+{
+    return self.items.count;
+}
+
+- (NSInteger)numberOfSections
+{
+    return 1;
+}
+
+- (id)itemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.items[indexPath.row];
+}
 
 @end
