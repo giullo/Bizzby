@@ -8,7 +8,6 @@
 
 #import "GGAppDelegate.h"
 #import "GGApplicationRouter.h"
-#import "NSURL+Routes.h"
 #import <JLRoutes/JLRoutes.h>
 
 @interface GGAppDelegate ()
@@ -24,9 +23,6 @@
     
     self.appBuilder = [GGApplicationRouter new];
     [self.appBuilder bootStrap];
-    NSLog(@"%@", [NSURL cp_URLForCatDetailWithId:@"giullo"]);
-    
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.rootViewController = [self.appBuilder rootViewController];

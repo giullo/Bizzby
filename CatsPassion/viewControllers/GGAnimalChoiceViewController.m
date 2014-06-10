@@ -14,7 +14,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface GGAnimalChoiceViewController ()
-
+@property (nonatomic, assign) BOOL viewBuilt;
 @end
 
 @implementation GGAnimalChoiceViewController
@@ -35,6 +35,9 @@
 
 - (void)buildView
 {
+    if (self.viewBuilt) {
+        return;
+    }
     UIColor *onColor = [UIColor orangeColor];
     UIColor *offColor = [UIColor darkGrayColor];
     NSArray *colors = @[offColor, onColor];
@@ -56,6 +59,7 @@
         make.centerX.equalTo(catsBtn);
         make.top.equalTo(catsBtn.mas_bottom).with.offset(btnDistance);
     }];
+    self.viewBuilt = YES;
 }
 
 - (void)onButtonTapped:(UIButton *)btn

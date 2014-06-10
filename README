@@ -1,0 +1,40 @@
+## General approach
+I tried to focus more on designing a proper architecture than implementing many features. Basically the app is a simple image gallery of dogs or cats.
+
+## Architecture
+I implemented a simplified version of a design architecture that we used in Thomson Reuters to rewrite from scratch this application (https://itunes.apple.com/gb/app/thomson-reuters-eikon/id551988464?mt=8).
+It makes use of dependancy injection to properly manage the lifetime/relationships between objects and to provide a clean separation of concerns/responsibilities.
+It uses a (in my opinion) better version of the classic MVC that we called Model-ModelController-ViewController-View.
+Here is a brief explanation:
+
+### Model
+Is usually a basic object that just exposes the properties of a particular model.
+Usually does not contain any logic.
+
+### ModelController
+It is created with an object (Service) as a dependency that conforms to a specific interface, and its responsible of the business logic.
+Uses the Service to actually retrieve the data from the network and notifies its delegates when there's new data available
+
+### ViewController
+It is created with 2 objects as a dependency, a ModelController and a RenderStrategy.
+It is a delegate of the ModelController and uses the RenderStrategy to control some aspects of the rendering part.
+It is also responsible of managing the user interaction and reacts to them posting routes (expressed as URLs) that are executed by the ApplicationRouter
+
+### View
+It is responsible of the actual visualisation of the data.
+
+## Navigation
+Navigation between screens is abstracted with the concept of routes: when a new screen needs to be presented the presenter creates a URL and post it, then the ApplicationRouter intercepts it and has the necessary logic to create the destination controller. With this approach its fairly easy to open the same controller from different places (for example from another ViewController or by reacting to a Push Notification) without any duplication of code/logic (other than the URL creation)
+
+## Notes about the implementation
+With this in mind i created an AnimalGalleryViewController, that uses a UICollectionView to display a gallery of images. 
+The ModelController passed as a dependancy will provide the data (dogs or cats, based on the service passed as a parameter), while the RenderStrategy will provide the actual cell to be used by the collectionView and a render block that actually maps between the model object (a dog or a cat) and the cell.
+I did not comment much the code because it should be pretty self explanatory, but i would more than happy to discuss it on the phone/skype/in person.
+
+## Open Source Libraries
+AFNetworking (to take care of data requests and image downloading/caching)
+JLRoutes (to manage the routing system)
+Masonry (to manage autolayout in a sane way :))
+Kiwi (to write the tests)
+OHHTTPStub (to stub network requests in the tests)
+CocoaPods (to manage dependencies)

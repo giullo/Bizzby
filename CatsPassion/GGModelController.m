@@ -33,7 +33,7 @@
 
 - (instancetype)init
 {
-    NSAssert(NO, @"Please use initWithService");
+    NSAssert(NO, @"Please use initWithService:");
     return nil;
 }
 

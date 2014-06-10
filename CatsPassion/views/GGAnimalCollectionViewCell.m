@@ -89,6 +89,7 @@
     self.imageURL = url;
     NSURL *currentURL = self.imageURL;
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    self.statusLabel.text = @"";
     __block __typeof(self)weakSelf = self;
     [self.imageView setImageWithURLRequest:req placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
         __typeof(weakSelf)strongSelf = weakSelf;
