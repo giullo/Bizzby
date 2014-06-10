@@ -25,17 +25,20 @@ PODS:
     - Kiwi/ARC
     - Kiwi/NonARC
   - Masonry (0.5.2)
+  - OHHTTPStubs (3.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - JLRoutes (~> 1.5.1)
   - Kiwi/XCTest
   - Masonry
+  - OHHTTPStubs
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
   JLRoutes: 3400fe314fc01c861a14ff7e183d209b0cd302ae
   Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
   Masonry: ec0189e1a07af00913e4a1a335ea76887adc86e1
+  OHHTTPStubs: c1c2007839687eaf9b80f061ce84440515080ebb
 
 COCOAPODS: 0.33.1

@@ -5,3 +5,4 @@ pod "Masonry"
 target :CatsPassionTests, :exclusive => true do
   pod 'Kiwi/XCTest'
 end
+pod "OHHTTPStubs"
