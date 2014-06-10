@@ -16,6 +16,7 @@
 {
     NSParameterAssert(cellClass);
     NSParameterAssert(renderBlock);
+    NSAssert([cellClass isSubclassOfClass:[UICollectionViewCell class]], @"Please provide a UICollectionViewCell class");
     self = [super init];
     if (self) {
         _cellClass = cellClass;

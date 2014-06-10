@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4969C9701946F2FF00C91E96 /* GGNSURLRoutesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4969C96F1946F2FF00C91E96 /* GGNSURLRoutesSpec.m */; };
+		4969C9721946F5DA00C91E96 /* GGGalleryRenderStrategySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4969C9711946F5DA00C91E96 /* GGGalleryRenderStrategySpec.m */; };
+		4969C9741947048C00C91E96 /* GGCatsListServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4969C9731947048C00C91E96 /* GGCatsListServiceSpec.m */; };
+		4969C97619471BB800C91E96 /* GGDogsListServiceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97519471BB800C91E96 /* GGDogsListServiceSpec.m */; };
+		4969C97819471DF600C91E96 /* GGModelControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97719471DF600C91E96 /* GGModelControllerSpec.m */; };
 		695B29CA2D814AB4A34FBE4A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D255ABEDC4B04B98AF4C1086 /* libPods.a */; };
 		7ECF00CE1940ED6300EA9B7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECF00CD1940ED6300EA9B7D /* Foundation.framework */; };
 		7ECF00D01940ED6300EA9B7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECF00CF1940ED6300EA9B7D /* CoreGraphics.framework */; };
@@ -20,7 +24,6 @@
 		7ECF00E81940ED6300EA9B7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECF00CD1940ED6300EA9B7D /* Foundation.framework */; };
 		7ECF00E91940ED6300EA9B7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECF00D11940ED6300EA9B7D /* UIKit.framework */; };
 		7ECF00F11940ED6300EA9B7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ECF00EF1940ED6300EA9B7D /* InfoPlist.strings */; };
-		7ECF00F31940ED6300EA9B7D /* CatsPassionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF00F21940ED6300EA9B7D /* CatsPassionTests.m */; };
 		7ECF01051940FD9600EA9B7D /* GGRemoteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF01041940FD9600EA9B7D /* GGRemoteService.m */; };
 		7ECF010E1941063600EA9B7D /* GGModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF010D1941063600EA9B7D /* GGModelController.m */; };
 		7ECF011119410F7100EA9B7D /* GGCatsListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF011019410F7100EA9B7D /* GGCatsListService.m */; };
@@ -50,6 +53,10 @@
 		1F842661257B4ADE9F75BB0E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		3E2A96E44B424C62BB1BB3B6 /* Pods-CatsPassionTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsPassionTests.xcconfig"; path = "Pods/Pods-CatsPassionTests.xcconfig"; sourceTree = "<group>"; };
 		4969C96F1946F2FF00C91E96 /* GGNSURLRoutesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNSURLRoutesSpec.m; sourceTree = "<group>"; };
+		4969C9711946F5DA00C91E96 /* GGGalleryRenderStrategySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGGalleryRenderStrategySpec.m; sourceTree = "<group>"; };
+		4969C9731947048C00C91E96 /* GGCatsListServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCatsListServiceSpec.m; sourceTree = "<group>"; };
+		4969C97519471BB800C91E96 /* GGDogsListServiceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDogsListServiceSpec.m; sourceTree = "<group>"; };
+		4969C97719471DF600C91E96 /* GGModelControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGModelControllerSpec.m; sourceTree = "<group>"; };
 		7ECF00CA1940ED6300EA9B7D /* CatsPassion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsPassion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECF00CD1940ED6300EA9B7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7ECF00CF1940ED6300EA9B7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +72,6 @@
 		7ECF00E61940ED6300EA9B7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7ECF00EE1940ED6300EA9B7D /* CatsPassionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatsPassionTests-Info.plist"; sourceTree = "<group>"; };
 		7ECF00F01940ED6300EA9B7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7ECF00F21940ED6300EA9B7D /* CatsPassionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatsPassionTests.m; sourceTree = "<group>"; };
 		7ECF01011940F83C00EA9B7D /* GGModelControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGModelControllerProtocol.h; path = modelController/GGModelControllerProtocol.h; sourceTree = "<group>"; };
 		7ECF01021940FC7000EA9B7D /* GGServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GGServiceProtocol.h; path = protocols/GGServiceProtocol.h; sourceTree = "<group>"; };
 		7ECF01031940FD9600EA9B7D /* GGRemoteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGRemoteService.h; path = services/GGRemoteService.h; sourceTree = "<group>"; };
@@ -186,8 +192,11 @@
 		7ECF00EC1940ED6300EA9B7D /* CatsPassionTests */ = {
 			isa = PBXGroup;
 			children = (
-				7ECF00F21940ED6300EA9B7D /* CatsPassionTests.m */,
 				4969C96F1946F2FF00C91E96 /* GGNSURLRoutesSpec.m */,
+				4969C9711946F5DA00C91E96 /* GGGalleryRenderStrategySpec.m */,
+				4969C9731947048C00C91E96 /* GGCatsListServiceSpec.m */,
+				4969C97519471BB800C91E96 /* GGDogsListServiceSpec.m */,
+				4969C97719471DF600C91E96 /* GGModelControllerSpec.m */,
 				7ECF00ED1940ED6300EA9B7D /* Supporting Files */,
 			);
 			path = CatsPassionTests;
@@ -481,8 +490,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECF00F31940ED6300EA9B7D /* CatsPassionTests.m in Sources */,
+				4969C97819471DF600C91E96 /* GGModelControllerSpec.m in Sources */,
+				4969C9721946F5DA00C91E96 /* GGGalleryRenderStrategySpec.m in Sources */,
+				4969C97619471BB800C91E96 /* GGDogsListServiceSpec.m in Sources */,
 				4969C9701946F2FF00C91E96 /* GGNSURLRoutesSpec.m in Sources */,
+				4969C9741947048C00C91E96 /* GGCatsListServiceSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
