@@ -15,10 +15,13 @@
 @interface GGModelControllerTestDelegate : NSObject <GGModelControllerDelegate>
 @property (nonatomic, strong) NSError *error;
 @property (nonatomic, strong) id data;
+@property (nonatomic, copy) void (^testBlock) (id data, NSError *error);
 @end
 
 @implementation GGModelControllerTestDelegate
-- (void)modelController:(id<GGModelControllerProtocol>)modelCtrl didReceiveData:(id)data error:(NSError *)error {};
+- (void)modelController:(id<GGModelControllerProtocol>)modelCtrl didReceiveData:(id)data error:(NSError *)error {
+    self.testBlock(data, error);
+};
 - (void)modelControllerWillFetchData:(id<GGModelControllerProtocol>)modelCtrl {};
 
 @end
@@ -34,9 +37,19 @@ describe(@"GGModelController", ^{
     __block GGModelControllerTestDelegate *testDelegate;
     __block GGModelControllerTestDelegate *testDelegate1;
     __block GGModelController *modelController;
+    __block NSError *expectedError;
+    __block id expectedData = @"";
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     testDelegate = [GGModelControllerTestDelegate new];
+    testDelegate.testBlock = ^(id data, NSError *error) {
+        expectedError = error;
+        expectedData = data;
+    };
     testDelegate1 = [GGModelControllerTestDelegate new];
+    testDelegate1.testBlock = ^(id data, NSError *error) {
+        expectedError = error;
+        expectedData = data;
+    };
     GGRemoteService *service = [[GGRemoteService alloc] initWithURL:[NSURL URLWithString:@"http://some.url.to"] sessionManager:sessionManager];
     modelController = [[GGModelController alloc] initWithService:service];
     [modelController addDelegate:testDelegate];
@@ -71,6 +84,18 @@ describe(@"GGModelController", ^{
             [modelController fetchDataWithRange:NSMakeRange(0, 0)];
         });
     });
+    
+    context(@"when calling fetchData and expecting invalid results", ^{
+        it(@"delegates should receive nil data and a proper error", ^{
+            shouldFail = YES;
+            [modelController fetchDataWithRange:NSMakeRange(0, 0)];
+            [[expectFutureValue(expectedData) shouldEventually] beNil];
+            [[expectFutureValue(expectedError) shouldEventually] beNonNil];
+        });
+    });
+    
+    
+    
 });
 
 SPEC_END
