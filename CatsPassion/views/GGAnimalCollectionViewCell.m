@@ -75,6 +75,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+    [self.imageView cancelImageRequestOperation];
+}
+
 - (void)renderImageWithURL:(NSURL *)url
 {
     /* to avoid flickering during fast scrolling i save the url of the image */
